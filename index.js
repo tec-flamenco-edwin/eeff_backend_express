@@ -8,33 +8,34 @@ app.use(cors());
 
 app.get("/usuario" ,function(req,res){
     res.json({
-        primernombre:"edwin",
-        segundonombre:"ernesto",
-        primerapellido:"flamemco",
-        segundoapellido:"flores",
-        fechadenacimiento:"14/6/2000",
-        estadofamiliar:"soltero",
-        residencia:"la libertad",
-        profession:"camionero mecanico",
-        estatura: 1.78,
-        peso: 80 ,
-        colorpiel:"moreno",
-        colorojos:"cafe o negro",
-        colorcabello:"negro",
-        ultimosempleos:[{
-            empresa: "",
-            departamento : "sala de venta",
-            dirrecion:"la libertad",
-            cargo:"ventas - caja",
-            desde:"2011-01-01",
-            hasta:"2011-12-31"
+        Primernombre:"edwin",
+        Segundonombre:"ernesto",
+        Rrimerapellido:"flamemco",
+        Segundoapellido:"flores",
+        Fechadenacimiento:"14/6/2000",
+        Estadofamiliar:"soltero",
+        Residencia:"la libertad",
+        Profesion:"camionero mecanico",
+        Estatura: 1.78,
+        Peso: 80 ,
+        Colorpiel:"moreno",
+        Colorojos:"cafe o negro",
+        Colorcabello:"negro",
+        Ultimosempleos:[{
+            Empresa: "",
+            Departamento : "sala de venta",
+            Dirrecion:"la libertad",
+            Cargo:"ventas - caja",
+            Desde:"2011-01-01",
+            Hasta:"2011-12-31"
          },{
-                empresa: "transflores",
-                departamento : "camionero",
-                dirrecion:"la libertad",
-                cargo:"camionero",
-                desde:"2011-01-01",
-                hasta:"2011-12-31"
+                Empresa: "transflores",
+                Departamento : "camionero",
+               
+                Dirrecion:"la libertad",
+                Cargo:"camionero",
+                Desde:"2011-01-01",
+                Hasta:"2011-12-31"
             }]
 
         
@@ -115,8 +116,8 @@ app.get('/sumar',function(req,res){
 });
 
 app.get('/login',function(req,res){
-    console.log(req.body.email);
-    console.log(req.body.password);
+    console.log(req.query.email);
+    console.log(req.query.password);
 
 });
 
